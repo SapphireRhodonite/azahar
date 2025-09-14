@@ -166,6 +166,7 @@ void SdlConfig::ReadValues() {
     ReadSetting("Layout", Settings::values.layout_option);
     ReadSetting("Layout", Settings::values.swap_screen);
     ReadSetting("Layout", Settings::values.upright_screen);
+    ReadSetting("Layout", Settings::values.upright_secondary_screen);
     ReadSetting("Layout", Settings::values.large_screen_proportion);
     ReadSetting("Layout", Settings::values.custom_top_x);
     ReadSetting("Layout", Settings::values.custom_top_y);

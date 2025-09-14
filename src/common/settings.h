@@ -520,6 +520,7 @@ struct Values {
     SwitchableSetting<LayoutOption> layout_option{LayoutOption::Default, "layout_option"};
     SwitchableSetting<bool> swap_screen{false, "swap_screen"};
     SwitchableSetting<bool> upright_screen{false, "upright_screen"};
+    SwitchableSetting<bool> upright_secondary_screen{false, "upright_secondary_screen"};
     SwitchableSetting<SecondaryDisplayLayout> secondary_display_layout{SecondaryDisplayLayout::None,
                                                                        "secondary_display_layout"};
     SwitchableSetting<float, true> large_screen_proportion{4.f, 1.f, 16.f,

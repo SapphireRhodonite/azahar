@@ -523,6 +523,7 @@ void QtConfig::ReadLayoutValues() {
     ReadGlobalSetting(Settings::values.layout_option);
     ReadGlobalSetting(Settings::values.swap_screen);
     ReadGlobalSetting(Settings::values.upright_screen);
+    ReadGlobalSetting(Settings::values.upright_secondary_screen);
     ReadGlobalSetting(Settings::values.large_screen_proportion);
     ReadGlobalSetting(Settings::values.screen_gap);
     ReadGlobalSetting(Settings::values.small_screen_position);
@@ -1088,6 +1089,7 @@ void QtConfig::SaveLayoutValues() {
     WriteGlobalSetting(Settings::values.layout_option);
     WriteGlobalSetting(Settings::values.swap_screen);
     WriteGlobalSetting(Settings::values.upright_screen);
+    WriteGlobalSetting(Settings::values.upright_secondary_screen);
     WriteGlobalSetting(Settings::values.large_screen_proportion);
     WriteGlobalSetting(Settings::values.screen_gap);
     WriteGlobalSetting(Settings::values.small_screen_position);

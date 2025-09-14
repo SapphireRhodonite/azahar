@@ -451,6 +451,7 @@ Se esperan fallos gráficos temporales cuando ésta esté activado.</string>
     <string name="emulation_cycle_landscape_layouts">Alternar estilos</string>
     <string name="emulation_swap_screens">Intercambiar Pantallas</string>
     <string name="emulation_rotate_upright">Rotar pantalla en vertical</string>
+    <string name="emulation_rotate_external_left">Rotar solo la pantalla externa a la izquierda</string>
     <string name="emulation_touch_overlay_reset">Reiniciar Estilo</string>
     <string name="emulation_show_controller_overlay">Mostrar superposición de controles</string>
     <string name="emulation_close_game">Cerrar Juego</string>

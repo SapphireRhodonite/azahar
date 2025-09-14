@@ -344,15 +344,18 @@ FramebufferLayout AndroidSecondaryLayout(u32 width, u32 height) {
     switch (layout) {
 
     case Settings::SecondaryDisplayLayout::BottomScreenOnly:
-        return SingleFrameLayout(width, height, true, Settings::values.upright_screen.GetValue());
+        return SingleFrameLayout(width, height, true,
+                                 Settings::values.upright_secondary_screen.GetValue());
     case Settings::SecondaryDisplayLayout::SideBySide:
-        return LargeFrameLayout(width, height, false, Settings::values.upright_screen.GetValue(),
+        return LargeFrameLayout(width, height, false,
+                                Settings::values.upright_secondary_screen.GetValue(),
                                 1.0f, Settings::SmallScreenPosition::MiddleRight);
     case Settings::SecondaryDisplayLayout::None:
         // this should never happen, but if it does, somehow, send the top screen
     case Settings::SecondaryDisplayLayout::TopScreenOnly:
     default:
-        return SingleFrameLayout(width, height, false, Settings::values.upright_screen.GetValue());
+        return SingleFrameLayout(width, height, false,
+                                 Settings::values.upright_secondary_screen.GetValue());
     }
 }
 

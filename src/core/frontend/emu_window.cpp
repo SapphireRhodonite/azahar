@@ -211,7 +211,9 @@ void EmuWindow::UpdateCurrentFramebufferLayout(u32 width, u32 height, bool is_po
     const auto min_size = is_portrait_mode
                               ? Layout::GetMinimumSizeFromPortraitLayout()
                               : Layout::GetMinimumSizeFromLayout(
-                                    layout_option, Settings::values.upright_screen.GetValue());
+                                    layout_option, is_secondary
+                                                    ? Settings::values.upright_secondary_screen.GetValue()
+                                                    : Settings::values.upright_screen.GetValue());
 
     width = std::max(width, min_size.first);
     height = std::max(height, min_size.second);

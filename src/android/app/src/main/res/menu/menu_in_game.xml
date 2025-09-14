@@ -43,6 +43,11 @@
         android:title="@string/emulation_rotate_upright" />
 
     <item
+        android:id="@+id/menu_rotate_external_upright"
+        android:icon="@drawable/ic_rotate_up_right"
+        android:title="@string/emulation_rotate_external_left" />
+
+    <item
         android:id="@+id/menu_lock_drawer"
         android:icon="@drawable/ic_unlocked"
         android:title="@string/lock_drawer" />

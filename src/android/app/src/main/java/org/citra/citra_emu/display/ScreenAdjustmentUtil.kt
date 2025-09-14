@@ -77,4 +77,15 @@ class ScreenAdjustmentUtil(
         NativeLibrary.updateFramebuffer(NativeLibrary.isPortraitMode)
 
     }
+
+    fun toggleSecondaryScreenUpright() {
+        val uprightBoolean = BooleanSetting.SECONDARY_UPRIGHT_SCREEN.boolean
+        BooleanSetting.SECONDARY_UPRIGHT_SCREEN.boolean = !uprightBoolean
+        settings.saveSetting(
+            BooleanSetting.SECONDARY_UPRIGHT_SCREEN,
+            SettingsFile.FILE_NAME_CONFIG
+        )
+        NativeLibrary.reloadSettings()
+        NativeLibrary.updateFramebuffer(NativeLibrary.isPortraitMode)
+    }
 }

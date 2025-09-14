@@ -1098,6 +1098,15 @@ class SettingsFragmentPresenter(private val fragmentView: SettingsFragmentView) 
                 )
             )
             add(
+                SwitchSetting(
+                    BooleanSetting.SECONDARY_UPRIGHT_SCREEN,
+                    R.string.emulation_rotate_external_left,
+                    0,
+                    BooleanSetting.SECONDARY_UPRIGHT_SCREEN.key,
+                    BooleanSetting.SECONDARY_UPRIGHT_SCREEN.defaultValue
+                )
+            )
+            add(
                 SingleChoiceSetting(
                     IntSetting.PORTRAIT_SCREEN_LAYOUT,
                     R.string.emulation_switch_portrait_layout,

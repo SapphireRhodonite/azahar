@@ -311,6 +311,11 @@ class EmulationFragment : Fragment(), SurfaceHolder.Callback, Choreographer.Fram
                     true
                 }
 
+                R.id.menu_rotate_external_upright -> {
+                    screenAdjustmentUtil.toggleSecondaryScreenUpright()
+                    true
+                }
+
                 R.id.menu_lock_drawer -> {
                     when (EmulationMenuSettings.drawerLockMode) {
                         DrawerLayout.LOCK_MODE_UNLOCKED -> {
